@@ -11,4 +11,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'LayoutController as layout'
     })
 
+  $urlRouterProvider.otherwise('/');
 }
+
+routerConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+export { routerConfig };
