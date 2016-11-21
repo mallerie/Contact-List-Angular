@@ -1,8 +1,14 @@
 import angular from 'angular';
 
+import { routerConfig } from './routes';
+import { LayoutController } from './controllers/layout';
+import { HomeController } from './controllers/home';
+
 import 'angular-ui-router';
 
 angular
-  .module('app', [])
+  .module('app', ['ui.router'])
   .config(routerConfig)
-  .controller();
+  .controller('LayoutController', LayoutController)
+  .controller('HomeController', HomeController)
+  ;
