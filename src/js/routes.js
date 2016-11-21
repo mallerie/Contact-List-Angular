@@ -14,6 +14,11 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/contact.tpl.html',
       controller: 'ContactController as contact'
     })
+    .state('root.add', {
+      url: '/add',
+      templateUrl: 'templates/add.tpl.html',
+      controller: 'AddController as add'
+    })
 
   $urlRouterProvider.otherwise('/');
 }
