@@ -1,4 +1,4 @@
-import SERVER from './server';
+import { SERVER } from '../server';
 
 function ContactService ($http) {
 
@@ -13,6 +13,7 @@ function ContactService ($http) {
   this.getContact = function (id) {
     let url = SERVER + id;
     return $http.get(url);
+  }  
 
 }
 
