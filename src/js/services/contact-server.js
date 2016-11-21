@@ -7,12 +7,16 @@ function ContactService ($http) {
   }
 
   this.addContact = function (contact) {
-    return $http.post(SERVER, gif);
+    return $http.post(SERVER, contact);
   };
 
   this.getContact = function (id) {
     let url = SERVER + id;
     return $http.get(url);
+  }
+
+  this.deleteContact = function (contact) {
+    return $http.delete(SERVER + id);
   }  
 
 }
