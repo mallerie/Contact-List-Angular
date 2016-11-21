@@ -8,9 +8,8 @@ function AddController ($state, ContactService) {
   this.addContact = addContact;
 
   function addContact (contact) {
-    ContactService.addContact.then((resp) => {
-      console.log(resp);
-      $state.go('home');
+    ContactService.addContact(contact).then((resp) => {
+      $state.go('root.home');
 
     })
   }
