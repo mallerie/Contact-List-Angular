@@ -1,23 +1,45 @@
 <h1>ADD VIEW</h1>
 
-<p class="control has-icon">
-  <input class="input" type="email" placeholder="Name">
-  <i class="fa fa-envelope"></i>
-</p>
-<p class="control has-icon">
-  <input class="input" type="email" placeholder="Email">
-  <i class="fa fa-envelope"></i>
-</p>
-<p class="control has-icon">
-  <input class="input" type="password" placeholder="Phone Number">
-  <i class="fa fa-lock"></i>
-</p>
-<p class="control has-icon">
-  <input class="input" type="password" placeholder="Location">
-  <i class="fa fa-lock"></i>
-</p>
-<p class="control">
-  <button class="button is-primary">
-    Submit
-  </button>
-</p>
+<form name="new-contact" ng-submit="add.addContact(contact)">  
+
+  <p class="control has-icon">
+    <input class="input" type="text" 
+           placeholder="Name" name="name"
+           ng-model="contact.name">
+    <i class="fa fa-user"></i>
+  </p>
+
+  <p class="control has-icon">
+    <input class="input" type="email" 
+           placeholder="Email" name="email"
+           ng-model="contact.email">
+    <i class="fa fa-envelope"></i>
+  </p>
+
+  <p class="control has-icon">
+    <input class="input" type="tel" 
+           placeholder="Phone Number" name="phone"
+           ng-model="contact.phone">
+    <i class="fa fa-phone"></i>
+  </p>
+
+  <p class="control has-icon">
+    <input class="input" type="text" 
+           placeholder="Location" name="location"
+           ng-model="contact.location">
+    <i class="fa fa-globe"></i>
+  </p>
+
+  <p class="control has-icon">
+    <input class="input" type="text" 
+           placeholder="Type Image Url Here" name="image-url"
+           ng-model="contact.image-url">
+    <i class="fa fa-picture-o"></i>
+  </p>
+
+  <p class="control">
+    <button class="button is-primary">
+      Submit
+    </button>
+  </p>
+</form>
