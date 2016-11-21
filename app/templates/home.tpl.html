@@ -1,5 +1,12 @@
   <h1>My Contacts (HomeController)</h1>
 
   <ul class="contacts-list">
-    <li ng-repeat="">Temp Name</li>
+    <li ng-repeat="contact in contacts">
+      <a href="#/contact/{{ contact._id }}">
+        <div class="card">
+          <img src="https://kenanfellows.org/wp-content/uploads/2016/02/blank-profile-picture-973460_960_720.png" alt="">
+          <h3>Test Name</h3>
+        </div>
+      </a>
+    </li>
   </ul>
