@@ -1,3 +1,3 @@
-const SERVER = "https://class-server.herokuapp.com/collections/mals-contacts";
+const SERVER = "https://class-server.herokuapp.com/collections/mal-contacts";
 
 export { SERVER };
