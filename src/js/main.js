@@ -16,5 +16,6 @@ angular
   .controller('LayoutController', LayoutController)
   .controller('HomeController', HomeController)
   .controller('AddController', AddController)
+  .controller('ContactController', ContactController)
   .service('ContactService', ContactService)
   ;

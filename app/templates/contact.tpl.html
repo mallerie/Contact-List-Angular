@@ -1,4 +1,11 @@
 <h1>CONTACT VIEW (SINGLE CONTACT)</h1>
 
-<h2>Person Name</h2>
-<h2>Phone Number</h2>
+<a href="#/"><i class="fa fa-arrow-left"></i></a>
+<img src="{{ contact.user.image }}" alt="{{ contact.user.name}}">
+<h2><i class="fa fa-user"></i>{{ contact.user.name }}</h2>
+
+<h2><i class="fa fa-envelope"></i>{{ contact.user.email }}</h2>
+
+<h2><i class="fa fa-phone"></i>{{ contact.user.phone }}</h2>
+
+<h2><i class="fa fa-globe"></i>{{ contact.user.location }}</h2>

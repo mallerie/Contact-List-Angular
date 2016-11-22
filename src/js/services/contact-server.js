@@ -11,7 +11,7 @@ function ContactService ($http) {
   };
 
   this.getContact = function (id) {
-    let url = SERVER + id;
+    let url = SERVER + "/" + id;
     return $http.get(url);
   }
 

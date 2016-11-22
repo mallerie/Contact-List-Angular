@@ -1,6 +1,22 @@
 @import 'bulma';
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 50%;
   margin: auto;
+}
+
+.card {
+  border-bottom: 5px #ccc;
+  img {
+    width: 15%;
+  }
+  h3 {
+    display: inline-block;
+
+  }
+
 }

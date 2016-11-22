@@ -1,9 +1,14 @@
-function HomeController () {
+function HomeController (ContactService) {
 
   let vm = this;
 
   function init () {
-  console.log("Home Controller ran succesfully");
+    console.log("Home Controller ran succesfully");
+    ContactService.allContacts().then((resp) => {
+      vm.contacts = resp.data;
+      console.log(resp.data);
+    });
+
     
   }
 
@@ -11,5 +16,5 @@ function HomeController () {
 
 }
 
-HomeController.$inject = [];
+HomeController.$inject = ['ContactService'];
 export { HomeController };

@@ -1,11 +1,11 @@
   <h1>My Contacts</h1>
 
   <ul class="contacts-list">
-    <li ng-repeat="contact in contacts">
+    <li ng-repeat="contact in home.contacts">
       <a href="#/contact/{{ contact._id }}">
         <div class="card">
-          <img src="https://kenanfellows.org/wp-content/uploads/2016/02/blank-profile-picture-973460_960_720.png" alt="">
-          <h3>Test Name</h3>
+          <img src="https://kenanfellows.org/wp-content/uploads/2016/02/blank-profile-picture-973460_960_720.png" alt="avatar">
+          <h3>{{ contact.name }}</h3>
         </div>
       </a>
     </li>

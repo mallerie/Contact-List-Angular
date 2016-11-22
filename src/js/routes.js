@@ -7,7 +7,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     .state('root.home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html',
-      controller: 'LayoutController as layout'
+      controller: 'HomeController as home'
     })
     .state('root.contact', {
       url: '/contact/:id',
