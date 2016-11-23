@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -10,13 +12,27 @@
 }
 
 h1 {
+  margin: 1em 0 0 0;
   display: inline-block;
 }
 
+.header {
+  min-height: 3em;
+  background: #eee;
+  i {
+    float: right;
+    margin: .4em;
+    // height: 4em;
+  }
+}
+
 .card {
+  margin: 0;
   border-bottom: 5px #ccc;
-  img {
+  width: 100%;
+  #list-img {
     width: 15%;
+    clip-path: circle(75px at 50% 50%);
   }
   h3 {
     display: inline-block;

@@ -1,7 +1,9 @@
-<h1>CONTACT VIEW (SINGLE CONTACT)</h1>
+<div class="header">
+  <a href="#/"><i class="fa fa-arrow-left"></i></a>
+  <!-- <button ng-click="contact.deleteContact(contact)"><i class="fa fa-trash"></i></button> -->
+  <img ng-src="{{ contact.user.image }}" alt="{{ contact.user.name}}">
+</div>
 
-<a href="#/"><i class="fa fa-arrow-left"></i></a>
-<img src="{{ contact.user.image }}" alt="{{ contact.user.name}}">
 <h2><i class="fa fa-user"></i>{{ contact.user.name }}</h2>
 
 <h2><i class="fa fa-envelope"></i>{{ contact.user.email }}</h2>

@@ -16,7 +16,8 @@ function ContactService ($http) {
   }
 
   this.deleteContact = function (contact) {
-    return $http.delete(SERVER + id);
+    let url = SERVER + "/" + id;
+    return $http.delete(url);
     console.log("deleteContact ran")
   }  
 

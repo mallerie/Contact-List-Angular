@@ -1,14 +1,16 @@
+<div class="header">
   <h1>My Contacts</h1>
   <a href="#/add"><i class="fa fa-plus"></i></a>
+</div>
 
   <ul class="contacts-list">
     <li ng-repeat="contact in home.contacts">
       <a href="#/contact/{{ contact._id }}">
-        <div class="card">
-          <img src="{{ contact.image }}" alt="avatar">
+        <div class="card is-full-width">
+          <img id="list-img" ng-src="{{ contact.image }}" alt="avatar">
           <h3>{{ contact.name }}</h3>
         </div>
       </a>
-      <button ng-click="home.deleteContact(contact)"><i class="fa fa-trash"></i></button>
+      
     </li>
   </ul>
