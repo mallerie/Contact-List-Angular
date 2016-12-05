@@ -12,6 +12,15 @@ function  ContactController (ContactService, $stateParams) {
   }
 
   init();
+
+  function deleteContact() {
+    console.log("remove func is running");
+    // ContactService.deleteContact(contact).then((resp) => {
+    //   $state.go('root.home');
+    // })
+  };
+
+
 }
 
 ContactController.$inject = ['ContactService', '$stateParams'];
